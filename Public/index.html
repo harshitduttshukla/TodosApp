@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo Application</h1>
+    <div id="app">
+        <div>
+            <h2>Add New Todo</h2>
+            <form id="add-todo-form">
+                <input type="number" id="user-id" placeholder="User ID" required>
+                <input type="text" id="todo-title" placeholder="Todo Title" required>
+                <button type="submit">Add Todo</button>
+            </form>
+        </div>
+
+
+        <div>
+            <h2>Todos</h2>
+            <input type="number" id="fetch-user-id" placeholder="User ID to fetch todos">
+            <button onclick="fetchTodos()">Fetch Todos</button>
+            <ul id="todo-list"></ul>
+        </div>
+
+ ///////--------------------------------       /-------------------------------------------------------------------//
+        <div>
+            <h2>Update Todo</h2>
+            <form id="update-todo-form">
+                <input type="number" id="update-user-id" placeholder="User ID" required>
+                <input type="number" id="update-todo-id" placeholder="Todo ID" required>
+                <input type="text" id="update-title" placeholder="New Title" required>
+                <button type="submit">Update Todo</button>
+            </form>
+        </div>
+
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <div>
+            <h2>Delete Todo</h2>
+            <form id="delete-todo-form">
+                <input type="number" id="delete-user-id" placeholder="User ID" required>
+                <input type="number" id="delete-todo-id" placeholder="Todo ID" required>
+                <button type="submit">Delete Todo</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

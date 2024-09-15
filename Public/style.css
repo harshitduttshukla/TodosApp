@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#app {
+    width: 80%;
+    margin: auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-right: 10px;
+}
